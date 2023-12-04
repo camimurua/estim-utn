@@ -1,0 +1,35 @@
+<div class="title-container col-8">
+  <h2>Género: {{genero?.name}}</h2>
+  <button class="redirect" routerLink="/generos"> Ir a listado de géneros</button>
+</div>
+
+<div class="game-container col-8 card">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-action">
+      <span>Id: </span>{{genero?.id}}
+    </li>
+    <li class="list-group-item list-group-item-action">
+      <span>Nombre: </span>{{genero?.name}}
+    </li>
+    <li class="list-group-item list-group-item-action">
+      <span>Edad mínima: </span>{{genero?.minimumAge}}
+    </li>
+    <li class="list-group-item list-group-item-action">
+      <span>Juego: </span>
+      <ng-container *ngFor="let game of genero?.relatedGames">
+        Id: {{game.gameId}}
+      </ng-container>
+
+    </li>
+    <li class="list-group-item list-group-item-action">
+      <span>Informacion juegos: </span>
+      <br>
+      <ng-container *ngFor="let game of games">
+        <span>{{game.id}} {{game.name}} ${{game.price}} {{game.gameType}}</span>
+        <br>
+      </ng-container>
+
+    </li>
+
+  </ul>
+</div>

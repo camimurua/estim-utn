@@ -1,0 +1,27 @@
+<div class="create-game-container card col-8">
+  <!-- game-form-component.html -->
+  <form [formGroup]="gameForm" id="gameForm" class="col-9">
+    <label for="firstName">Nombre <span *ngIf="isEdit">nuevo</span>:
+      <input formControlName="firstName" type="text" id="firstName" name="firstName" placeholder="Ingrese el nombre">
+      <small *ngIf="gameForm.get('firstName')?.invalid && (gameForm.get('firstName')?.dirty || gameForm.get('firstName')?.touched)">Debe ingresar un nombre</small>
+    </label>
+
+    <label for="lastName">Apellido <span *ngIf="isEdit">nuevo</span>:
+      <input formControlName="lastName" type="text" id="lastName" name="lastName" placeholder="Ingrese el apellido">
+      <small *ngIf="gameForm.get('lastName')?.invalid && (gameForm.get('lastName')?.dirty || gameForm.get('lastName')?.touched)">Debe ingresar un apellido</small>
+    </label>
+
+    <label for="country">Pais  <span *ngIf="isEdit">nuevo</span>:
+      <input formControlName="country" type="text" id="country" name="country" placeholder="Ingrese el país">
+      <small *ngIf="gameForm.get('country')?.invalid && (gameForm.get('country')?.dirty || gameForm.get('country')?.touched)">Debe ingresar un país</small>
+    </label>
+
+    <label for="salary">Salario  <span *ngIf="isEdit">nuevo</span>:
+      <input formControlName="salary" type="number" id="salary" name="salary" placeholder="Ingrese el salario">
+      <small *ngIf="gameForm.get('salary')?.invalid && (gameForm.get('salary')?.dirty || gameForm.get('salary')?.touched)">Debe ingresar un salario</small>
+    </label>
+  </form>
+
+  <ng-content select="[action]"></ng-content>
+
+</div>

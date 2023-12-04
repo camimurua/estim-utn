@@ -1,0 +1,26 @@
+<p>games-list works!</p>
+
+<div class="title-container col-8">
+    <h2>Catálogo de juegos:</h2>
+</div>
+
+<div class="game-container card col-8" style="margin: auto;">
+    <ul class="list-group">
+      <li appHighLigth style="cursor: pointer;" *ngFor="let game of games"
+        class="list-group-item list-group-item-action">
+        <div class="info-game">
+          <div>Id: {{game.id}}</div>
+          <div>Nombre: {{game.name}}</div>
+          <div>Requerimientos de cpu:</div>  
+          <div>Memoria: {{game.reqCpu['memory']}}</div>
+          <div>Almacenamiento: {{game.reqCpu['storage']}}</div>
+          <div>Precio: {{game.price}}</div>
+          <div>Género</div>
+          <div>Nombre: {{game.genre['name']}}</div>
+          <div>Edad mínima: {{game.genre['minAge']}}</div>
+          <div>Tipo de Juego: {{game.gameType}}</div>
+        </div>
+  
+      </li>
+    </ul>
+</div>

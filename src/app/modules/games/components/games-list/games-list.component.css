@@ -1,0 +1,19 @@
+.game-container{
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+h2{
+  margin: 20px 0 20px 0;
+}
+.info-game{
+  font-size: 14px;
+  color: black;
+  margin-bottom: 20px;
+}
+.title-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+}

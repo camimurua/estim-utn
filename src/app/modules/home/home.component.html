@@ -1,0 +1,10 @@
+<div class="container">
+
+  <button routerLink='/juegos'>Ir a <strong>"/juegos"</strong></button>
+  <button routerLink='/generos'>Ir a <strong>"/generos"</strong></button>
+  
+  <button 
+  (click)="toggleIsLoggedIn()"
+  [style.background]="!isLoggedIn ? 'red' : 'green'" >Ir a <strong>Loguearme</strong></button>
+
+</div>

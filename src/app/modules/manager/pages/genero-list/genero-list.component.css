@@ -1,0 +1,36 @@
+.game-container {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+h2 {
+  margin: 20px 0 20px 0;
+}
+span {
+  font-size: 14px;
+  color: black;
+}
+span.id {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #1976d2;
+  width: 5%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+}
+button {
+  height: max-content;
+  background-color: #1976d2;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}

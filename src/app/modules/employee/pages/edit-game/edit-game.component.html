@@ -1,0 +1,9 @@
+<div class="title-container col-8">
+  <h2>{{titulo}}</h2>
+</div>
+
+<app-game-form >
+  <button (click)="funcionDelBoton()"
+  [disabled]="!habilitar"
+  boton class="col-2">Editar juego</button>
+</app-game-form>

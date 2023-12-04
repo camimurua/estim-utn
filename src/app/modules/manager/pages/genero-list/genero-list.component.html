@@ -1,0 +1,23 @@
+<div class="title-container col-8">
+  <h2>Listado de géneros:</h2>
+  <button class="redirect" routerLink="/home"> Ir a home</button>
+</div>
+
+<div class="game-container card col-8" style="margin: auto;">
+  <ul class="list-group" *ngIf="generoArray.length >= 1 else NoGenero">
+    <li appHighLigth style="cursor: pointer;" *ngFor="let genero of generoArray"
+      class="list-group-item list-group-item-action">
+      <div [routerLink]="[genero.id]">
+        <span class="id">{{genero.id}}</span>
+        <span style="margin-left: 5px;">
+          {{genero.name}} {{genero.minimumAge}} -{{genero.relatedGames | json}}
+        </span>
+      </div>
+
+    </li>
+  </ul>
+</div>
+
+<ng-template #NoGenero>
+  <span class="badge badge-primary">Aún no hay generos</span>
+</ng-template>

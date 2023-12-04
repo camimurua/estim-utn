@@ -1,0 +1,90 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Minecraft",
+      "cpuRequirements": {
+        "processor":"Intel i5",
+        "storage": "50 GB",
+        "memory": "8 GB"
+      },
+      "price": 49.99,
+      "genre": { 
+        "id": 101,
+        "name": "Aventura"
+      },
+      "gameType": "Full"
+    },
+    {
+      "id": 2,
+      "name": "Plants vs Zombies",
+      "cpuRequirements": {
+        "processor": "AMD Ryzen 7",
+        "storage": "100 GB",
+        "memory": "16 GB"
+      },
+      "price": 29.99,
+      "genre": {
+        "id": 102,
+        "name": "Acción"
+      },
+      "gameType": "DLC"
+    },
+    {
+      "id": 3,
+      "name": "Among Us",
+      "cpuRequirements": {
+        "processor": "Intel i3",
+        "storage": "30 GB",
+        "memory": "4 GB"
+      },
+      "price": 19.99,
+      "genre": {
+        "id": 103,
+        "name": "Estrategia"
+      },
+      "gameType": "Full"
+    }
+  ],
+  "generos": [
+    {
+      "id": 101,
+      "name": "Aventura",
+      "minimumAge": 12,
+      "relatedGames": [
+        {
+          "gameId": 1
+        },
+        {
+          "gameId": 2
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Acción",
+      "minimumAge": 18,
+      "relatedGames": [
+        {
+          "gameId": 1
+        },
+        {
+          "gameId": 3
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Estrategia",
+      "minimumAge": 0,
+      "relatedGames": [
+        {
+          "gameId": 2
+        },
+        {
+          "gameId": 3
+        }
+      ]
+    }
+  ]
+}

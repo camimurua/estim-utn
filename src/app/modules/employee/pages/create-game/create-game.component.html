@@ -1,0 +1,11 @@
+
+<div class="title-container col-8" >
+  <h2 >Crear juego:</h2>
+  <button class="redirect" routerLink="/juegos"
+  > Ir a listado de juegos</button>
+</div>
+
+<app-game-form>
+  <button action (click)="createGame()"  [ngClass]="{'disabled':!isFormValid}" class="col-2" type="submit">Crear juego</button>
+</app-game-form>
+
