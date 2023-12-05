@@ -3,8 +3,16 @@
   <button routerLink='/juegos'>Ir a <strong>"/juegos"</strong></button>
   <button routerLink='/generos'>Ir a <strong>"/generos"</strong></button>
   
+  <!-- <div>
+    <div>Loguearse como:</div>
+    
+  </div> -->
   <button 
   (click)="toggleIsLoggedIn()"
-  [style.background]="!isLoggedIn ? 'red' : 'green'" >Ir a <strong>Loguearme</strong></button>
+  [style.background]="!isLoggedIn ? 'red' : 'green'" ><strong>Usuario</strong></button>
+
+  <button 
+  (click)="toggleIsLoggedIn()"
+  [style.background]="'red'" ><strong>Admin</strong></button>
 
 </div>

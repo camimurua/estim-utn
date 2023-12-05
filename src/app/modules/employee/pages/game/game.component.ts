@@ -22,6 +22,7 @@ export interface Game {
   price: number;
   genre: Genero;
   gameType: string;
+  image: string;
 }
 
 @Component({
