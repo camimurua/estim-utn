@@ -2,7 +2,7 @@
   padding: 10px;
   margin: 20px auto 20px auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, .4);
 }
 label{
@@ -18,3 +18,20 @@ input{
   padding: 8px;
 }
 
+#gameForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.titulo-form {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.seccion-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}

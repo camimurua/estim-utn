@@ -4,12 +4,12 @@
       "id": 1,
       "name": "Minecraft",
       "cpuRequirements": {
-        "processor":"Intel i5",
+        "processor": "Intel i5",
         "storage": "50 GB",
         "memory": "8 GB"
       },
       "price": 49.99,
-      "genre": { 
+      "genre": {
         "id": 101,
         "name": "Aventura"
       },

@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class EditGameComponent {
   titulo: string = 'Modificar juego:';
 
-  habilitar: boolean = false;
+  habilitar: boolean = true;
   id!: number;
 
   constructor(private route: ActivatedRoute) {

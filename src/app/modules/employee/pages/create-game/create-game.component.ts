@@ -13,7 +13,6 @@ export class CreateGameComponent {
   constructor(private _gameService:GameService){}
 
   createGame(){
-    if(!this.isFormValid) return
     const formValue = this.GameFormComponent.gameForm.value
     this.GameFormComponent.gameForm.reset()
     this._gameService.createGame(formValue).subscribe()
