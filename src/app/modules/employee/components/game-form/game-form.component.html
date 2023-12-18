@@ -20,26 +20,27 @@
             </label>
         </div>
 
-        <div class="seccion-form">
+        <div class="seccion-form" formGroupName="cpuRequirements">
             <span class="titulo-form">Requisitos:</span>
+            {{cpuRequirements}}
             <label for="memory">Procesador:
-              <input type="text" id="memory" formControlName="reqCpu.memory" placeholder="Ingrese la cantidad de memoria" required />
+              <input type="text" id="processor" formControlName="processor" placeholder="Ingrese la cantidad de memoria" required />
             </label>
             <label for="memory">Memoria:
-                <input type="text" id="memory" formControlName="reqCpu.memory" placeholder="Ingrese la cantidad de memoria" required />
+                <input type="text" id="memory" formControlName="memory" placeholder="Ingrese la cantidad de memoria" required />
             </label>
             <label for="storage">Almacenamiento:
-                <input type="text" id="storage" formControlName="reqCpu.storage" placeholder="Ingrese la cantidad de almacenamiento" required />
+                <input type="text" id="storage" formControlName="storage" placeholder="Ingrese la cantidad de almacenamiento" required />
             </label>
         </div>
 
-        <div class="seccion-form">
+        <div class="seccion-form" formGroupName="genre">
             <span class="titulo-form">Género</span>
             <label for="genre">Nombre:
-                <input type="text" id="genreName" formControlName="genre.name" placeholder="Ingrese el nombre" required />
+                <input type="text" id="genreName" formControlName="name" placeholder="Ingrese el nombre" required />
             </label>
             <label for="minAge">Edad mínima:
-                <input type="text" id="minAge" formControlName="genre.minAge" placeholder="Ingrese la edad mínima permitida" required />
+                <input type="text" id="minimumAge" formControlName="minimumAge" placeholder="Ingrese la edad mínima permitida" required />
             </label>
         </div>
   

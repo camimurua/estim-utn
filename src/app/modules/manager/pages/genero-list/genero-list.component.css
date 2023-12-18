@@ -12,7 +12,7 @@ span {
 span.id {
   display: inline-block;
   border-radius: 50%;
-  background-color: #1976d2;
+  background-color: #5527FF;
   width: 5%;
   height: 100%;
   text-align: center;
@@ -28,7 +28,7 @@ span.id {
 }
 button {
   height: max-content;
-  background-color: #1976d2;
+  background-color: #5527FF;
   color: #fff;
   padding: 8px;
   border: none;

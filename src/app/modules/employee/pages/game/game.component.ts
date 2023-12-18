@@ -3,22 +3,16 @@ import { ActivatedRoute } from '@angular/router';
 import { GameService } from 'src/app/services/game.service';
 import { Genero } from 'src/app/services/genero.service';
 
-// export interface Game {
-//   lastName: string;
-//   firstName: string;
-//   country: string;
-//   salary: number;
-//   id: number;
-// }
+export interface cpuRequirements {
+    processor: string;
+    storage: string;
+    memory: string;
+}
 
 export interface Game {
   id: number;
   name: string;
-  cpuRequirements: {
-    processor: string;
-    storage: string;
-    memory: string;
-  };
+  cpuRequirements: cpuRequirements;
   price: number;
   genre: Genero;
   gameType: string;

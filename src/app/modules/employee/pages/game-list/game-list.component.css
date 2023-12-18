@@ -13,7 +13,7 @@ span{
 span.id{
   display: inline-block;
   border-radius: 50%;
-  background-color: #1976d2;
+  background-color: #5527FF;
   width: 15px;
   height: 100%;
   text-align: center;
@@ -29,9 +29,19 @@ span.id{
 }
 button{
   height: max-content;
-  background-color: #1976d2;
+  background-color: #5527FF;
   color: #fff;
   padding: 8px;
   border: none;
   border-radius: 5px;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }

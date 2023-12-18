@@ -17,7 +17,7 @@ span {
 }
 button.redirect {
   height: max-content;
-  background-color: #1976d2;
+  background-color: #5527FF;
   color: #fff;
   padding: 8px;
   border: none;
@@ -26,7 +26,7 @@ button.redirect {
 button.edit {
   margin-left: auto;
   height: max-content;
-  background-color: #ffc107;
+  background-color: #F149B7;
   color: #fff;
   padding: 8px;
   border: none;

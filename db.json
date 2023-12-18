@@ -47,6 +47,22 @@
       },
       "gameType": "Full",
       "image": "amongus"
+    },
+    {
+      "id": "4",
+      "name": "game of thrones",
+      "cpuRequirements": {
+        "processor": "Exylon",
+        "storage": "18gb",
+        "memory": "15gb"
+      },
+      "price": "1500",
+      "genre": {
+        "name": "Ciencia Ficción",
+        "minimumAge": "20"
+      },
+      "gameType": "DLC",
+      "image": "logo_generico"
     }
   ],
   "generos": [

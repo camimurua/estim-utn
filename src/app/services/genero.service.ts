@@ -1,14 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-// export interface Genero {
-//   id: number;
-//   firstName: string;
-//   lastName: string;
-//   country: string;
-//   games: Game[];
-// }
-
 interface GameGenero {
   gameId: number
 }

@@ -7,7 +7,7 @@ import { HomeModule } from './modules/home/home.module';
 import { CommonModule } from '@angular/common';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { SpinnerInterceptor } from './interceptors/spinner';
-import { SpinnerComponent } from './shared/components/spinner/spinner.component';
+
 @NgModule({
   declarations: [AppComponent, HighLigthDirective],
   imports: [
@@ -15,8 +15,7 @@ import { SpinnerComponent } from './shared/components/spinner/spinner.component'
     AppRoutingModule,
     HomeModule,
     CommonModule,
-    HttpClientModule,
-    SpinnerComponent
+    HttpClientModule
   ],
   providers: [
     {
