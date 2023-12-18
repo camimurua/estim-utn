@@ -39,9 +39,11 @@ export class GameFormComponent {
     }
   }
 
-  onSubmit(): void {
+  onSubmit() {
     const formValue = this.gameForm.value;
     this._gameService.createGame(formValue);
+
+    //resetea el formulario
     this.gameForm.reset();
   }
 }
