@@ -26,11 +26,26 @@ span.id {
   flex-direction: row;
   margin: auto;
 }
-button {
+
+button{
   height: max-content;
   background-color: #5527FF;
   color: #fff;
   padding: 8px;
   border: none;
   border-radius: 5px;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+h4{
+  margin-top: 10px;
 }

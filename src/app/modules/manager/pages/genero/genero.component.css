@@ -38,3 +38,13 @@ button.edit {
   margin: auto;
   background-color: rgba(255, 255, 255, 0.4);
 }
+
+.buttons-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}

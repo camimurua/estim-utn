@@ -79,7 +79,7 @@
     {
       "id": 103,
       "name": "Estrategia",
-      "minimumAge": 0,
+      "minimumAge": 4,
       "relatedGames": [
         {
           "gameId": 2

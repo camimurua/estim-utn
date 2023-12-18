@@ -1,34 +1,23 @@
 <div class="title-container col-8">
   <h2>Listado de géneros:</h2>
-  <button class="redirect" routerLink="/home"> Ir a home</button>
 </div>
 
 <div class="game-container card col-8" style="margin: auto;">
-  <ul class="list-group" *ngIf="generoArray.length >= 1 else NoGenero">
-    <li appHighLigth style="cursor: pointer;" *ngFor="let genero of generoArray"
+  <div class="list-group" *ngIf="generoArray.length >= 1 else NoGenero">
+    <div appHighLigth style="cursor: pointer;" *ngFor="let genero of generoArray"
       class="list-group-item list-group-item-action">
       <div class="card" [routerLink]="[genero.id]" style="align-items: center;text-align: center;">
-        <!-- <img src="./img/{{game.image}}.PNG" alt="{{game.name}}"> -->
-        <img
-          width="50%"
-          alt="img ejemplo"
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-        />
         <div class="container">
           <h4><b>{{genero.name}}</b></h4>
           <p>Edad mínima: {{genero.minimumAge}}</p>
         </div>
       </div>
+    </div>
+  </div>
+</div>
 
-      <!-- <div [routerLink]="[genero.id]">
-        <span class="id">{{genero.id}}</span>
-        <span style="margin-left: 5px;">
-          {{genero.name}} {{genero.minimumAge}} -{{genero.relatedGames | json}}
-        </span>
-      </div> -->
-
-    </li>
-  </ul>
+<div class="buttons-container col-8">
+  <button class="redirect" routerLink="/home"> Ir a home</button>
 </div>
 
 <ng-template #NoGenero>
